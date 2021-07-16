@@ -36,13 +36,13 @@ This file will be written to the working directory.
 
 '''
 
-from custom.functions import HelloWorld
+from custom97.functions import Hello9
 
-fn = HelloWorld(name='AS_Tester', greeting_col='greeting')
+fn = Hello9(name='AS_Tester', greeting_col='greeting')
 fn.execute_local_test(db=db, db_schema=db_schema)
 
 '''
 Register function so that you can see it in the UI
 '''
 
-db.register_functions([HelloWorld])
+db.register_functions([Hello9])
